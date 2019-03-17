@@ -3,8 +3,6 @@ package com.sarah.library;
 
 import org.tensorflow.lite.Interpreter;
 
-import io.reactivex.Observable;
-import io.reactivex.functions.Consumer;
 import processing.core.PApplet;
 
 /**
@@ -40,16 +38,10 @@ public class HelloLibrary {
     myParent = theParent;
     welcome();
 
+    System.out.println("--sarah start--");
     Interpreter.Options interpreter = new Interpreter.Options().setUseNNAPI(true);
-    System.out.println("interpreter.toString()");
-
-    Observable observable = Observable.just("test");
-    observable.subscribe(new Consumer() {
-      @Override
-      public void accept(Object o) throws Exception {
-        System.out.println("Using depending rx lib!");
-      }
-    });
+    System.out.println(interpreter.toString());
+    System.out.println("--sarah end--");
   }
 
 
