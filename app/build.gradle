@@ -5,6 +5,7 @@ plugins {
 android {
     namespace "com.sarah.template"
     compileSdkVersion 33
+
     defaultConfig {
         applicationId "com.sarah.template"        
         minSdkVersion 21
@@ -25,9 +26,10 @@ android {
 dependencies {
     testImplementation 'junit:junit:4.13.2'    
     androidTestImplementation 'com.android.support.test:runner:1.3.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
     implementation 'org.processing.android:processing-core:4.5.1'
 
     implementation project(path: ':library')

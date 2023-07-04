@@ -39,6 +39,6 @@ After having compiled and built your project successfully, you should be able to
 ## Import into Android Studio
 
 1. Open Android Studio and select the "Import project" menu item in the welcome screen. 
-2. Navigate to the location where you checked out the repository in your computer, and select the debug folder.
+2. Navigate to the location where you checked out the repository in your computer, and select the folder.
 3. Android Studio should be able to import the debug project automatically, which includes the library itself and a minimal test app.
 
