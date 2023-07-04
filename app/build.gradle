@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace "com.sarah.template"
+    namespace "template.app"
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.sarah.template"        
+        applicationId "template.app"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1

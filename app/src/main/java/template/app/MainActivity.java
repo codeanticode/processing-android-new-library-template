@@ -1,4 +1,4 @@
-package com.sarah.template;
+package template.app;
 
 import android.os.Bundle;
 import android.content.Intent;

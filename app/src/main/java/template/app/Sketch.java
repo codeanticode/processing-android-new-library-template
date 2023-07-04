@@ -1,4 +1,4 @@
-package com.sarah.template;
+package template.app;
 
 import com.sarah.library.HelloLibrary;
 
