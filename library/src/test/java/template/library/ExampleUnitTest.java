@@ -1,4 +1,4 @@
-package com.sarah.library;
+package template.library;
 
 import org.junit.Test;
 

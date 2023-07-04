@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "com.sarah.library"    
+    namespace "template.library"    
     compileSdkVersion 33
 
     defaultConfig {        
@@ -27,6 +27,4 @@ android {
 dependencies {
     testImplementation 'junit:junit:4.13.2'
     api 'org.processing.android:processing-core:4.5.1'
-
-    // implementation 'org.tensorflow:tensorflow-lite:1.13.1'
 }

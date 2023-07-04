@@ -1,6 +1,6 @@
 package template.app;
 
-import com.sarah.library.HelloLibrary;
+import template.library.HelloLibrary;
 
 import processing.core.PApplet;
 import processing.core.PFont;
