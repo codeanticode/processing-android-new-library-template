@@ -1,8 +1,5 @@
 package com.sarah.library;
 
-
-import org.tensorflow.lite.Interpreter;
-
 import processing.core.PApplet;
 
 /**
@@ -38,10 +35,10 @@ public class HelloLibrary {
     myParent = theParent;
     welcome();
 
-    System.out.println("--sarah start--");
-    Interpreter.Options interpreter = new Interpreter.Options().setUseNNAPI(true);
-    System.out.println(interpreter.toString());
-    System.out.println("--sarah end--");
+    // System.out.println("--sarah start--");
+    // Interpreter.Options interpreter = new Interpreter.Options().setUseNNAPI(true);
+    // System.out.println(interpreter.toString());
+    // System.out.println("--sarah end--");
   }
 
 

@@ -1,13 +1,13 @@
 package com.sarah.template;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import androidx.appcompat.app.AppCompatActivity;
 
-import processing.android.CompatUtils;
 import processing.android.PFragment;
+import processing.android.CompatUtils;
 import processing.core.PApplet;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     FrameLayout frame = new FrameLayout(this);
     frame.setId(CompatUtils.getUniqueViewId());
     setContentView(frame, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.MATCH_PARENT));
+                                                     ViewGroup.LayoutParams.MATCH_PARENT));
 
     sketch = new Sketch();
     PFragment fragment = new PFragment(sketch);
@@ -27,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
   }
 
   @Override
-  public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+  public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {    
     if (sketch != null) {
-      sketch.onRequestPermissionsResult(
-              requestCode, permissions, grantResults);
+      sketch.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    } else {
+      super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
   }
 
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
   public void onNewIntent(Intent intent) {
     if (sketch != null) {
       sketch.onNewIntent(intent);
+    } else {
+      super.onNewIntent(intent);
     }
   }
 
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
     if (sketch != null) {
       sketch.onActivityResult(requestCode, resultCode, data);
+    } else {
+      super.onActivityResult(requestCode, resultCode, data);
     }
   }
 
@@ -52,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
   public void onBackPressed() {
     if (sketch != null) {
       sketch.onBackPressed();
+    } else {
+      super.onBackPressed();
     }
   }
 }

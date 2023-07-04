@@ -1,16 +1,18 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+}
 
 android {
-    compileSdkVersion 28
+    namespace "com.sarah.library"    
+    compileSdkVersion 33
 
-    defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
+    defaultConfig {        
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -23,7 +25,8 @@ android {
 }
 
 dependencies {
-    api 'org.p5android:processing-core:4.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    api 'org.processing.android:processing-core:4.5.1'
 
-    implementation 'org.tensorflow:tensorflow-lite:1.13.1'
+    // implementation 'org.tensorflow:tensorflow-lite:1.13.1'
 }
