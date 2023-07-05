@@ -198,7 +198,7 @@ task createPom {
 sourceSets {
     main {
         java {
-            srcDirs = ["src/"]
+            srcDirs = ["../library/src/main/java/"]
         }
     }
 }
@@ -295,7 +295,7 @@ task dist {
         //                         file("distribution/${libName}/data"))
         FileUtils.copyDirectory(file("library"),
                 file("distribution/${libName}/library"))
-        FileUtils.copyDirectory(file("src"),
+        FileUtils.copyDirectory(file("../library/src/main/java/"),
                 file("distribution/${libName}/src"))
 //        Files.copy(file("resources/library.properties").toPath(),
 //                file("distribution/${libName}/library.properties").toPath(), REPLACE_EXISTING);

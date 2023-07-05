@@ -3,6 +3,7 @@
 
 /.idea
 /distribution
+/library/*.jar
 
 debug/.gradle
 debug/.idea
